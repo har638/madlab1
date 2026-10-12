@@ -1,6 +1,5 @@
 package com.example.assignment
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -24,15 +23,8 @@ class DetailsActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.txtDetails).text =
             "Name: $name\nPhone: $phone\nE-mail: $email"
 
-        findViewById<Button>(R.id.btnEditDetails).setOnClickListener {
-            finish() // Return to the form activity.
-        }
-
         findViewById<Button>(R.id.btnDetailsHome).setOnClickListener {
-            val homeIntent = Intent(this, MainActivity::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-            }
-            startActivity(homeIntent)
+            // In Question 5, Home returns to the Enter Your Details screen.
             finish()
         }
     }

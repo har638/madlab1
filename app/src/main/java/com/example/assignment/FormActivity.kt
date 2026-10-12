@@ -23,9 +23,5 @@ class FormActivity : AppCompatActivity() {
             }
             startActivity(intent)
         }
-
-        findViewById<Button>(R.id.btnFormHome).setOnClickListener {
-            finish()
-        }
     }
 }

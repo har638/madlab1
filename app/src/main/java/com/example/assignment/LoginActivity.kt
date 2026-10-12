@@ -13,6 +13,6 @@ class LoginActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
             Toast.makeText(this, "Login button pressed", Toast.LENGTH_SHORT).show()
         }
-        // No in-app Back button is required. Android's system Back returns to MainActivity.
+        // No in-app button leads back to the five-question assignment menu.
     }
 }
