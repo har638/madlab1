@@ -13,6 +13,8 @@ class LoginActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
             Toast.makeText(this, "Login button pressed", Toast.LENGTH_SHORT).show()
         }
-        // No in-app button leads back to the five-question assignment menu.
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish() // Returns to the Question 1 Home screen, not the assignment menu.
+        }
     }
 }
